@@ -1,0 +1,15 @@
+markdown: kramdown
+permalink: /:title/
+url: blog.brainit.cn
+name: Brainit.cn
+author: Brainit
+qq: 205513092
+email: brainit@163.com
+duoshuo: brainit
+beian: 蜀ICP备16005732号
+cnzz: 1261658100
+weibo: 345205513
+github: Brainit
+safe: true
+paginate: 15
+about: "2016.08.11迁移博客到github"
