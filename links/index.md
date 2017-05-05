@@ -8,5 +8,3 @@ comments: yes
 <input name="word" size="30">
 <input type="submit" value="百度搜索">
 </form>
-
-<input name="word" size="30">
