@@ -10,23 +10,19 @@ comments: yes
 
 <br/>
 
-<center>
-	<FORM method="GET" action="http://www.google.com/search" target="_blank">
-		<TABLE bgcolor="#FFFFFF" style="border:none;">
-			<tr>
-				<td>
-					<INPUT TYPE="text" name="q" value="">
-					<INPUT TYPE="hidden" name="hl"  value="zh-CN">
-					<INPUT type="submit" name="btnG"  value="Google搜索">
-				</td>
-			</tr>
-		</TABLE>
-	</FORM>
-</center>
-
+<FORM method="GET" action="http://www.google.com/search" target="_blank">
+	<TABLE bgcolor="#FFFFFF" style="border:none;">
+		<tr>
+			<td>
+				<INPUT TYPE="text" name="q" value="">
+				<INPUT TYPE="hidden" name="hl"  value="zh-CN">
+				<INPUT type="submit" name="btnG"  value="Google搜索">
+			</td>
+		</tr>
+	</TABLE>
+</FORM>
 <br/>
 
-<center>
 <form id="bdfm" target="_blank" name="bdfm" method="get" action="https://api.47ks.com/webcloud/">
     <table>
        <tr> 
@@ -35,7 +31,6 @@ comments: yes
          </tr>
     </table>
 </form>
-</center>
 <br/>
 
 
