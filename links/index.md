@@ -3,6 +3,12 @@ title: 链接
 layout: page
 comments: yes
 ---
+<a href="http://www.bilibili.com/" target="_blank" >哔哩哔哩</a>
+<a href="http://www.youku.com/" target="_blank" >优酷视频</a>
+<a href="https://translate.google.cn/" target="_blank" >谷歌翻译</a>
+<a href="https://www.youtube.com/" target="_blank" >Youtube</a>
+
+<br/>
 
 <center>
 	<FORM method="GET" action="http://www.google.com/search" target="_blank">
@@ -32,7 +38,4 @@ comments: yes
 </center>
 <br/>
 
-<a href="http://www.bilibili.com/" target="_blank" >哔哩哔哩</a>
-<a href="http://www.youku.com/" target="_blank" >优酷视频</a>
-<a href="https://translate.google.cn/" target="_blank" >谷歌翻译</a>
-<a href="" target="_blank" ></a>
+
