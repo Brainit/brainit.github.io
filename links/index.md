@@ -5,13 +5,13 @@ comments: yes
 ---
 
 <center>
-	<FORM method=GET action="http://www.google.com/search" target="_blank">
+	<FORM method="GET" action="http://www.google.com/search" target="_blank">
 		<TABLE bgcolor="#FFFFFF" style="border:none;">
 			<tr>
 				<td>
-					<INPUT TYPE=text name=q size=31 maxlength=255 value="">
-					<INPUT TYPE=hidden name=hl  value=zh-CN>
-					<INPUT type=submit name=btnG  value="Google搜索">
+					<INPUT TYPE="text" name="q" size="31px" maxlength="255" value="">
+					<INPUT TYPE="hidden" name="hl"  value="zh-CN">
+					<INPUT type="submit" name="btnG"  value="Google搜索">
 				</td>
 			</tr>
 		</TABLE>
@@ -33,6 +33,6 @@ comments: yes
 <br/>
 
 <a href="http://www.bilibili.com/" target="_blank" >哔哩哔哩</a>
-<a href="http://www.youku.com/" target="_blank" />优酷视频</a>
-<a href="" target="_blank" /></a>
-<a href="" target="_blank" /></a>
+<a href="http://www.youku.com/" target="_blank" >优酷视频</a>
+<a href="" target="_blank" ></a>
+<a href="" target="_blank" ></a>
