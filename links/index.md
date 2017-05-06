@@ -9,7 +9,7 @@ comments: yes
 		<TABLE bgcolor="#FFFFFF" style="border:none;">
 			<tr>
 				<td>
-					<INPUT TYPE="text" name="q" size="31px" maxlength="255" value="">
+					<INPUT TYPE="text" name="q" value="">
 					<INPUT TYPE="hidden" name="hl"  value="zh-CN">
 					<INPUT type="submit" name="btnG"  value="Google搜索">
 				</td>
