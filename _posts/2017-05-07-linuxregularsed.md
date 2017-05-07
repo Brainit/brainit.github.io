@@ -65,7 +65,7 @@ nl /etc/passwd | sed '10,20c the word instead'
 nl /etc/passwd | sed '10,20d'
 ```
 
-#### <span id="step5>插入</span>
+#### <span id="step5">插入</span>
 ```
 nl /etdc/passwd | sed '3i the word inserted'
 ```
