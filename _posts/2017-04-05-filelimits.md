@@ -7,12 +7,12 @@ tags: Emulate Linux
 ---
 
 ### 目录
-1. [Linux文件属性](#step1)
-2. [文件权限与属性的修改](#step2)
-3. [文件与目录权限的意义](#step3)
+1. [Linux文件属性](#item1)
+2. [文件权限与属性的修改](#item2)
+3. [文件与目录权限的意义](#item3)
 
 ---
-#### <span id="step1">Linux文件属性</span>
+#### <span id="item1">Linux文件属性</span>
 
 > * 文件属性查看
 <code>
@@ -68,7 +68,7 @@ tags: Emulate Linux
 
 
 
-#### <span id="step2">文件权限与属性的修改</span>
+#### <span id="item2">文件权限与属性的修改</span>
 > * chgrp：修改文件所属用户组
 >> chgrp [-R] groupname dirname/filename
 > * chown：修改所有者
@@ -92,7 +92,7 @@ tags: Emulate Linux
 >>> 例如：-rwxr-xr--时
 >>>
 >>> chmod u=rwx,g=rx,o=r 文件或文件夹
-#### <span id="step3">文件与目录权限的意义</span>
+#### <span id="item3">文件与目录权限的意义</span>
 > * 权限对文件的重要性
 >> * r（ｒｅａｄ）：可读取此文件，的实际内从，如读取文本文件的文字内容等
 >>

@@ -8,21 +8,21 @@ tags: Emulate Linux
 
 ### 目录
 
-1. [数组声明方式１](#step1)
-2. [数组声明方式２](#step2)
-3. [获取所有数组内容](#step3)
-4. [获取指定下标内容](#step4)
-5. [获取数组长度](#step5)
+1. [数组声明方式１](#item1)
+2. [数组声明方式２](#item2)
+3. [获取所有数组内容](#item3)
+4. [获取指定下标内容](#item4)
+5. [获取数组长度](#item5)
 
 ---
-#### <span id="step1">数组声明方式１</span>
+#### <span id="item1">数组声明方式１</span>
 > 数组声明方式１：arrayname=(值１，值２，...，值ｎ)
 ```
 #!/bin/bash
 name=("张三" "李四" "王五")
 ```
 
-#### <span id="step2">数组声明方式２</span>
+#### <span id="item2">数组声明方式２</span>
 > 数组声明方式２：arrayname[index]=值
 ```
 #!/bin/bash
@@ -32,7 +32,7 @@ name[1]="李四"
 name[2]="王五"
 ```
 
-#### <span id="step3">获取所有数组内容</span>
+#### <span id="item3">获取所有数组内容</span>
 > 获取所有数组内容：${arrayname[*]}或${arrayname[@]}
 ```
 #!/bin/bash
@@ -41,7 +41,7 @@ echo "所有同学的名字${arrayname[*]}"
 echo "另外一种方式${arrayname[@]}"
 ```
 
-#### <span id="step4">获取指定下标内容</span>
+#### <span id="item4">获取指定下标内容</span>
 > 获取指定小标内容：${arrayname[index]}
 ```
 #!/bin/bash
@@ -51,7 +51,7 @@ echo "获取第二个同学的名字：${arrayname[1]}"
 echo "获取第三个同学的名字：${arrayname[2]}"
 ```
 
-#### <span id="step5">获取数组长度</span>
+#### <span id="item5">获取数组长度</span>
 > 获取数组长度：${#arrayname[*]}或${#arrayname[@]}
 ```
 #!/bin/bash

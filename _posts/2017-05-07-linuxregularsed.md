@@ -8,17 +8,17 @@ tags: Emulate Linux
 
 ### 目录
 
-1. [sed用法](#step1)
-2. [新增](#step2)
-3. [替换-以行为单位](#step3)
-4. [删除](#step4)
-5. [插入](#step5)
-6. [打印](#step6)
-7. [替换-以字符为单位](#step7)
-8. [直接修改文件](#step8)
+1. [sed用法](#item1)
+2. [新增](#item2)
+3. [替换-以行为单位](#item3)
+4. [删除](#item4)
+5. [插入](#item5)
+6. [打印](#item6)
+7. [替换-以字符为单位](#item7)
+8. [直接修改文件](#item8)
 
 ---
-#### <span id="step1">sed用法</span>
+#### <span id="item1">sed用法</span>
 sed本身是一个管道命令，可以分析标准输入，而且还可以将数据进行替换，删除，新增，选取特定行等功能。
 ```bash
 sed [-nefr] [动作]
@@ -42,7 +42,7 @@ p:打印，也就是将某个选择的数据打印出来，通常p会与参数se
 s:替换，可以直接进行替换工作，通常这个s的动作可以搭配正则表达式
 ```
 
-#### <span id="step2">新增</span>
+#### <span id="item2">新增</span>
 增加一行，在第二行后增加字符the word appened
 ```
 nl /etc/passwd | sed '2a the word appened'
@@ -54,30 +54,30 @@ the second line appened \
 the third line appened'
 ```
 
-#### <span id="step3">替换-以行为单位</span>
+#### <span id="item3">替换-以行为单位</span>
 替换10-20行内容
 ```
 nl /etc/passwd | sed '10,20c the word instead'
 ```
 
-#### <span id="step4">删除</span>
+#### <span id="item4">删除</span>
 删除10-20行的内容
 ```
 nl /etc/passwd | sed '10,20d'
 ```
 
-#### <span id="step5">插入</span>
+#### <span id="item5">插入</span>
 ```
 nl /etdc/passwd | sed '3i the word inserted'
 ```
 
-#### <span id="step6">打印</span>
+#### <span id="item6">打印</span>
 在安静模式下打印3到5行
 ```
 nl /etc/passwd | sed -n '3,5p'
 ```
 
-#### <span id="step7">替换-以字符为单位</span>
+#### <span id="item7">替换-以字符为单位</span>
 基本格式
 ```
 sed 's/要替换的字符串/新的字符串/g'
@@ -88,7 +88,7 @@ sed 's/要替换的字符串/新的字符串/g'
 ifconfig eth0 | grep 'inet addr' | sed 's/^.*addr://g' | sed 's/Bcast.*$//g'
 ```
 
-#### <span id="step8">直接修改文件</span>
+#### <span id="item8">直接修改文件</span>
 sed中i参数能直接修改文件，例如在文末增加行
 ```
 sed -i '$a 这是在文末增加的内容'

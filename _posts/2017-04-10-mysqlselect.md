@@ -8,13 +8,13 @@ tags: Emulate MySQL
 
 ### 目录
 
-1. [sleect核心](#step1)
-2. [select查询过程](#step2)
-3. [select查询命令](#step3)
+1. [sleect核心](#item1)
+2. [select查询过程](#item2)
+3. [select查询命令](#item3)
 
 
 ---
-#### <span id="step1">update核心</span>
+#### <span id="item1">update核心</span>
 > select是MySQL中进行记录查找操作的命令
 > 
 > 核心1： 需要进行查找操作的表名
@@ -23,12 +23,12 @@ tags: Emulate MySQL
 > 
 > 核心3： 查找哪些列，即条件，表达式的值为真假，特殊的1为真，0为假
 
-#### <span id="step2">select查询过程</span>
+#### <span id="item2">select查询过程</span>
 > 针对每一条记录，如果当前记录满足条件，则将当前记录中字段按照需要查找的字段返回
 > 
 > 列是变量，变量能进行计算，即能对核心2进行操作并返回，例如对数字进行数学运算，对字符串进行追加等
 
-#### <span id="step3">select查询命令</span>
+#### <span id="item3">select查询命令</span>
 > select * from 表名
 >> 查询表中所有数据 
 > 

@@ -7,26 +7,26 @@ tags: Markdown Linux
 ---
 
 ### 目录
-1. [Remarkable介绍](#step1)
-2. [Remarkable安装](#step2)
-3. [使用](#step3)
+1. [Remarkable介绍](#item1)
+2. [Remarkable安装](#item2)
+3. [使用](#item3)
 
 ---
-#### <span id="step1">Remarkable介绍</span>
+#### <span id="item1">Remarkable介绍</span>
 > * Remarkable : Markdown编辑器
 > * 轻量级
 > * 开源免费
 > * 易于使用
 > * 实时预览
 
-#### <span id="step2">remarkable安装</span>
+#### <span id="item2">remarkable安装</span>
 > * 下载安装包[remarkable]()
 > * dpkg安装：dpkg -i remarkable*.deb （不同版本，所以使用*替代）
 > * sudo apt-get update
 > * sudo apt-get upgrade
 > * 自动fix依赖：sudo apt-get install -f
 
-#### <span id="step3">使用</span>
+#### <span id="item3">使用</span>
 > * remarkable &
 
 ---

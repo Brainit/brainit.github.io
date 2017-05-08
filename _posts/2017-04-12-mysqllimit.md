@@ -8,11 +8,11 @@ tags: Emulate MySQL
 
 ### 目录
 
-1. [limit双参数](#step1)
-2. [limit单参数](#step2)
+1. [limit双参数](#item1)
+2. [limit单参数](#item2)
 
 ---
-#### <span id="step1">limit双参数</span>
+#### <span id="item1">limit双参数</span>
 > limit 偏移量，最大数目
 >> select * from tablename limit 5,6;
 >> 
@@ -22,7 +22,7 @@ tags: Emulate MySQL
 >> select * from tablename order by 字段名 limit 5,6;
 
 
-#### <span id="step2">limit单参数</span>
+#### <span id="item2">limit单参数</span>
 > limit 最大数目
 > 
 > 等价于：limit 0,最大数目

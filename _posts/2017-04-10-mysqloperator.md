@@ -8,19 +8,19 @@ tags: Emulate MySQL
 
 ### 目录
 
-1. [运算符概述](#step1)
-2. [算术运算符](#step2)
-3. [逻辑运算符](#step3)
-4. [比较运算符](#step4)
-5. [位操作运算符](#step5)
-6. [运算符优先级](#step6)
+1. [运算符概述](#item1)
+2. [算术运算符](#item2)
+3. [逻辑运算符](#item3)
+4. [比较运算符](#item4)
+5. [位操作运算符](#item5)
+6. [运算符优先级](#item6)
 
 
 ---
-#### <span id="step1">运算符概述</span>
+#### <span id="item1">运算符概述</span>
 > 运算符是告诉MySQL执行特殊算术或逻辑操作的符号。MySQL的内部运算符很丰富，主要有4大类：算术运算符，逻辑运算符，比较运算符，位操作运算符。
 
-#### <span id="step2">算术运算符</span>
+#### <span id="item2">算术运算符</span>
 > 
 |运算符 |作用  |
 |:----|:----|
@@ -30,7 +30,7 @@ tags: Emulate MySQL
 |/|除法运算，返回商|
 |%|求余运算，返回余数|
 
-#### <span id="step3">逻辑运算符</span>
+#### <span id="item3">逻辑运算符</span>
 > 
 |运算符|作用|等价运算|实例|
 |:----|:----|:-----|:-----|
@@ -40,7 +40,7 @@ tags: Emulate MySQL
 |^|异或运算|xor|1 ^ 1 或则 1 xor 1|
 
 
-#### <span id="step4">比较运算符</span>
+#### <span id="item4">比较运算符</span>
 > 
 |运算符 |作用  |
 |:----|:----|
@@ -59,7 +59,7 @@ tags: Emulate MySQL
 |REGEXP|使用正则表达式进行比较|
 
 
-#### <span id="step5">位操作运算符</span>
+#### <span id="item5">位操作运算符</span>
 
 > 
 |运算符 |作用  |
@@ -72,7 +72,7 @@ tags: Emulate MySQL
 |<<|位左移|
 
 
-#### <span id="step6">运算符优先级</span>
+#### <span id="item6">运算符优先级</span>
 
 > 
 | 优先级|运算符  |

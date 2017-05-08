@@ -8,19 +8,19 @@ tags: Emulate Linux
 
 ### 目录
 
-1. [if语句](#step1)
-2. [if-else语句](#step2)
-3. [if-elseif-else语句](#step3)
-4. [for语句](#step4)
-5. [while语句](#step5)
-6. [util语句](#step6)
-7. [case语句](#step7)
-8. [跳出循环-break](#step8)
-9. [跳出当前循环-continue](#step9)
-10. [几种无限循环](#step10)
+1. [if语句](#item1)
+2. [if-else语句](#item2)
+3. [if-elseif-else语句](#item3)
+4. [for语句](#item4)
+5. [while语句](#item5)
+6. [util语句](#item6)
+7. [case语句](#item7)
+8. [跳出循环-break](#item8)
+9. [跳出当前循环-continue](#item9)
+10. [几种无限循环](#item10)
 
 ---
-#### <span id="step1">if语句</span>
+#### <span id="item1">if语句</span>
 > 
 > 命令格式
 ```
@@ -47,7 +47,7 @@ fi
 if [ $a -lt $b ]; then echo "a小于b";fi 
 ```
 
-#### <span id="step2">if-else语句</span>
+#### <span id="item2">if-else语句</span>
 > 
 > 命令格式
 ```
@@ -72,7 +72,7 @@ else
 	echo "a大于b"
 fi
 ```
-#### <span id="step3">if-else-if-else语句</span>
+#### <span id="item3">if-else-if-else语句</span>
 > 
 > 命令格式
 ```
@@ -101,7 +101,7 @@ else
 fi
 ```
 
-#### <span id="step4">for语句</span>
+#### <span id="item4">for语句</span>
 > 
 > 命令格式
 ```
@@ -127,7 +127,7 @@ do
 done
 ```
 
-#### <span id="step5">while语句</span>
+#### <span id="item5">while语句</span>
 > 
 > 命令格式
 ```
@@ -148,7 +148,7 @@ do
 done
 ```
 
-#### <span id="step6">util语句</span>
+#### <span id="item6">util语句</span>
 > 
 > 命令格式
 ```
@@ -158,7 +158,7 @@ do
 done
 ```
 
-#### <span id="step7">case语句</span>
+#### <span id="item7">case语句</span>
 >　
 > 命令格式
 ```
@@ -197,13 +197,13 @@ case $aNum in
 esac
 ```
 
-#### <span id="step8">跳出循环-break</span>
+#### <span id="item8">跳出循环-break</span>
 > 在循环结构，for,while和util循环中，如果想在循环体中结束循环，就使用break命令跳出循环
 
-#### <span id="step9">跳出当前循环-continue</span>
+#### <span id="item9">跳出当前循环-continue</span>
 > 在循环结构，for,while和util循环中，如果想要在循环体中结束当前循环体，快速进入下一次循环，就使用continue命令
 
-#### <span id="step10">几种无限循环</span>
+#### <span id="item10">几种无限循环</span>
 > 使用while无限循环
 ```
 while :

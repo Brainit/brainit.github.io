@@ -7,13 +7,13 @@ tags: Emulate Linux
 ---
 
 ### 目录
-1. [Linux目录配置标准](#step1)
-2. [常见目录说明](#step2)
-3. [/usr文件说明](#step3)
-3. [/var文件说明](#step4)
+1. [Linux目录配置标准](#item1)
+2. [常见目录说明](#item2)
+3. [/usr文件说明](#item3)
+3. [/var文件说明](#item4)
 
 ---
-#### <span id="step1">Linux目录配置标准</span>
+#### <span id="item1">Linux目录配置标准</span>
 > * Ｌｉｎｕｘ目录配置标准(FileSystem Hierarchy Standard)
 > 
 |                   |可分享的|不可分享的|
@@ -28,7 +28,7 @@ tags: Emulate Linux
 > * 不变的：不经常变动，跟随ｄｉｓｔｒｉｂｕｔｉｏｎ而不变动，例如函数库，文件说明文件，系统管理员所管理的主机服务配置文件等
 > * 可改变的：经常改变的数据，例如登录文件，新闻组等。
 
-#### <span id="step2">常见目录说明</span>
+#### <span id="item2">常见目录说明</span>
 > 
 |目录|应放置文件内容|
 |:------:|:----------|
@@ -49,7 +49,7 @@ tags: Emulate Linux
 |/proc|这个目录本身是一个虚拟文件系统，他放置的数据都是在内存中，例如系统内核，进程，外部设备的状态以及网络状态等，所以本身不占任何磁盘空间
 |/sys|虚拟的文件系统，主要也是记录与内核相关的信息，包括前已加载的内核模块与内核检测到的硬件设备信息等，这个目录也不占硬盘空间
 
-#### <span id="step3">/usr文件说明</span>
+#### <span id="item3">/usr文件说明</span>
 > usr为UNIX Software Resource的缩写，意思是ＵＮＩＸ操作系统软件资源，所有系统默认软件都会放置在/usr下
 > 
 |目录|应放置文件内容|
@@ -62,7 +62,7 @@ tags: Emulate Linux
 |/usr/share/|放置共享文件的地方，在这个放置的数据几乎是部分硬件构架均可读取的数据，/usr/share/man/在线帮助文档,/usr/share/doc/软件杂项的文件说明，/usr/share/zoneinfo/与时区有关的时区文件
 |/usr/src/|一般源码建议放置到这里，/usr/src/linux/放置内核源码
 
-#### <span id="step4">/var文件说明</span>
+#### <span id="item4">/var文件说明</span>
 > var是针对常态性变化的文件，包括缓存ｃａｃｈｅ，登录文件ｌｏｇ　ｆｉｌｅ以及默写软件运行所产生的文件，包括程序文件(lock file , run file)，或者例如MySQL数据库的文件等
 > 
 |目录|应放置文件内容|

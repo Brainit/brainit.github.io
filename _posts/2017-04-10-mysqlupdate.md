@@ -8,11 +8,11 @@ tags: Emulate MySQL
 
 ### 目录
 
-1. [delete核心](#step1)
-2. [delete命令](#step2)
+1. [delete核心](#item1)
+2. [delete命令](#item2)
 
 ---
-#### <span id="step1">update核心</span>
+#### <span id="item1">update核心</span>
 > update是MySQL中进行记录删除操作的命令
 > 
 > 核心1： 需要进行删除操作的表名
@@ -20,5 +20,5 @@ tags: Emulate MySQL
 > 核心2： 删除哪些行，即条件
 
 
-#### <span id="step2">delete命令</span>
+#### <span id="item2">delete命令</span>
 > delete from 表名 where 条件;

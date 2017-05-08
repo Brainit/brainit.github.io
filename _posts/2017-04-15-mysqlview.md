@@ -8,25 +8,25 @@ tags: Emulate MySQL
 
 ### 目录
 
-1. [视图](#step1)
-2. [视图的作用](#step2)
-3. [视图的创建](#step3)
-3. [视图与表一对一](#step4)
-4. [视图与表一对多](#step5)
+1. [视图](#item1)
+2. [视图的作用](#item2)
+3. [视图的创建](#item3)
+3. [视图与表一对一](#item4)
+4. [视图与表一对多](#item5)
 
 ---
-#### <span id="step1">视图</span>
+#### <span id="item1">视图</span>
 > 视图是从一个或多个表中导出来的表，是一种虚拟存在的表。
 > 
 > 通俗的讲，视图就是一条select语句执行后返回的结果集。所以我们在创建视图的时候，主要的工作就落在创建这条SQL查询语句上。
 
-#### <span id="step2">视图的作用</span>
+#### <span id="item2">视图的作用</span>
 > 1. 使操作简单化，可以对经常使用的查询定义一个视图，使用户不必为同样的查询操作指定条件。
 2. 增加数据的安全性，通过视图，用户只能查询和增删改指定的数据。
 3. 提高表的逻辑独立性，视图可以屏蔽原来表结构变化带来的影响
 > 
 
-#### <span id="step3">视图的创建</span>
+#### <span id="item3">视图的创建</span>
 > 视图的创建语句：
 >> CREATE [ALGORITHM]={UNDEFINED|MERGE|TEMPTABLE}]
 >>
@@ -52,7 +52,7 @@ tags: Emulate MySQL
 > TIPS：创建视图时最好加上WITH CASCAEDED CHECK OPTION参数，这种方式比较严格，可以保证数据的安全性
 
 
-#### <span id="step4">视图与表一对一</span>
+#### <span id="item4">视图与表一对一</span>
 > 视图的select语句的数据来源于一张表，例如
 >> create view view_user
 >> 
@@ -73,7 +73,7 @@ tags: Emulate MySQL
 > update操作
 >> update view_user set password='456' where name='name';
 
-#### <span id="step5">视图与表一对多</span>
+#### <span id="item5">视图与表一对多</span>
 > 视图的select语句的数据来源与多张表，例如
 >> create view view_user_comment
 >>

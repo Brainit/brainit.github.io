@@ -8,23 +8,23 @@ tags: Emulate Java
 
 ### 目录
 
-1. [知识点一览](#step1)
-2. [流的概念和作用](#step2)
-3. [IO流的分类](#step3)
-4. [常用java流对象](#step4)
+1. [知识点一览](#item1)
+2. [流的概念和作用](#item2)
+3. [IO流的分类](#item3)
+4. [常用java流对象](#item4)
 
 
 ---
-#### <span id="step1">知识点一览</span>
+#### <span id="item1">知识点一览</span>
 > Java流类图结构：<br />
 ![Java流类图](http://pic002.cnblogs.com/images/2012/384764/2012031413373126.jpg 'Java流类图')<br />
 > 
 
-#### <span id="step2">流的概念和作用</span>
+#### <span id="item2">流的概念和作用</span>
 > **流**是一组有顺序的，有七点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流。**流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。**
 > 
 
-#### <span id="step3">IO流的分类</span>
+#### <span id="item3">IO流的分类</span>
 > 根据处理数据类型的不同：字符流和字节流<br />
 >> **字符流**
 >>> 由于数据编码的不同，而有了对字符进行高效操作的流对象。本质其实就是给予字节流读取时，查了指定的码表。<br />
@@ -41,7 +41,7 @@ tags: Emulate Java
 >> 对输入流只能进行读操作，对输出流只能进行写操作，程序中需要根据待传数据的不同特性而使用不同的流。
 > 
 
-#### <span id="step4">Java IO流对象</span>
+#### <span id="item4">Java IO流对象</span>
 > 1. 输入字节流InputStream
 >> * InputStream是所有的输入字节流的父类，他是一个抽象类
 >> * ByteArratInputStream,StringBufferInputStream,FileInputStream是三种基本的介质流，他们分别是从Byte数组，StringBuffer，和本地文件中读取数据。

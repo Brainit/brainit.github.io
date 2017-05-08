@@ -8,16 +8,16 @@ tags: Emulate HTTP
 
 ### 目录
 
-1. [HTTP介绍](#step1)
-2. [HTTP特性](#step2)
-3. [HTTP协议---URL](#step3)
-4. [URL和URI的区别](#step4)
-5. [HTTP协议---Request请求](#step5)
-6. [HTTP协议---Response请求](#step6)
+1. [HTTP介绍](#item1)
+2. [HTTP特性](#item2)
+3. [HTTP协议---URL](#item3)
+4. [URL和URI的区别](#item4)
+5. [HTTP协议---Request请求](#item5)
+6. [HTTP协议---Response请求](#item6)
 
 
 ---
-#### <span id="step1">HTTP介绍</span>
+#### <span id="item1">HTTP介绍</span>
 > **HTTP协议**是Hyper Text Transfer Protocol（超文本传输协议）的缩写，是用于从万维网（WWW：World Wild Web）服务器传输超文本到本地浏览器的传送协议。
 > 
 > 目前使用广泛的HTTP协议版本为**HTTP/1.1**（最为广泛）和HTTP/1.0。
@@ -28,7 +28,7 @@ tags: Emulate HTTP
 >> 1. HTTP/1.0协议使用非持久联接，即在非持久连接下，一个TCP连接只传输一个web对象
 >> 2. HTTP/1.1协议默认使用持久连接，不必为每个web对象的传送建立一个新的连接，一个连接中可以传输多个对象。
 
-#### <span id="step2">HTTP特性</span>
+#### <span id="item2">HTTP特性</span>
 > 1. 支持客户/服务器模式。
 2. 简单快速：客户想服务器请求服务时，只需传送请求方法和路径。
 3. 灵活：HTTP允许传输任意类型的数据对象，正在传输的类型由Content-Type加以标记。
@@ -36,7 +36,7 @@ tags: Emulate HTTP
 5. 无状态：HTTP协议是无状态连接。无状态是指协议对于事务处理没有记忆能力。缺少状态以为着如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据增量达。另一方面，在服务器不需要先前信息时它的应答较快。
 > 
 
-#### <span id="step3">HTTP协议---URL</span>
+#### <span id="item3">HTTP协议---URL</span>
 > URL：是一种特殊类型的URI，包含了用于查找某个资源的足够的信息。
 > 
 > 默认格式：http://host[:port][abs_path]
@@ -52,7 +52,7 @@ tags: Emulate HTTP
 >> http:192.168.0.1/index.html
 > 
 
-#### <span id="step4">URL和URI的区别</span>
+#### <span id="item4">URL和URI的区别</span>
 > **URI**，uniform resource identifier，统一资源标识符，用来唯一的标识一个资源。
 >> Web上可用的每种资源如HTML文档、图像、视频片段、程序等都是一个来URI来定位的<br />
 URI一般由三部组成：<br />
@@ -70,7 +70,7 @@ URL一般由三部组成：<br />
 > **URN**， **uniform resource name**，统一资源命名，是通过名字来标识资源，比如mailto:brainit@qq.com。
 > 
 
-#### <span id="step5">HTTP协议---Request请求</span>
+#### <span id="item5">HTTP协议---Request请求</span>
 > HTTP请求由三部分组成，请求行（request line）、消息报头（header）、请求正文
 >> 请求方法 URL 协议版本<br />
 头部字段名1：值1<br />
@@ -95,7 +95,7 @@ TRACE：请求服务器回收收到的请求信息，主要用于测试或诊断
 >> 
 > 
 
-#### <span id="step6">HTTP协议---Response响应</span>
+#### <span id="item6">HTTP协议---Response响应</span>
 > HTTP响应也是由三部分组成，分别是：状态行、消息报头、响应正文
 >> HTTP/1.1 200 OK（状态行）<br />
 >> Content-Type: text/html;charset=utf-8(消息报头)<br />

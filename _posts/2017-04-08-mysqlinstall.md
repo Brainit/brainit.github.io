@@ -7,24 +7,24 @@ tags: Emulate Linux MySQL
 ---
 
 ### 目录
-1. [Ｕｂｕｎｔｕ下ＭｙＳＱＬ安装](#step1)
-2. [查看ＭySQL监听状态](#step2)
-3. [登录MySQL并查看数据库](#step3)
+1. [Ｕｂｕｎｔｕ下ＭｙＳＱＬ安装](#item1)
+2. [查看ＭySQL监听状态](#item2)
+3. [登录MySQL并查看数据库](#item3)
 
 ---
-#### <span id="step1">Ｕｂｕｎｔｕ下ＭｙＳＱＬ安装</span>
+#### <span id="item1">Ｕｂｕｎｔｕ下ＭｙＳＱＬ安装</span>
 > 1. sudo apt-get install mysql-server
 > 2. sudo apt-get install mysql-client
 > 3. sudo apt-get install libmysqlclient-dev
 > 
 > MySQL安装过程中需要输入ｒｏｏｔ用户密码作为登录密码
 
-#### <span id="step2">查看ＭySQL监听状态</span>
+#### <span id="item2">查看ＭySQL监听状态</span>
 > sudo netstat -tap | grep mysql
 > 
 > 通过查看ｍｙｓｑｌ网络监听状态，判断是否安装成功
 
-#### <span id="step３">登录MySQL并查看数据库</span>
+#### <span id="item３">登录MySQL并查看数据库</span>
 > mysql -h localhost -u root -p
 >> 
 >> -h参数为主机,-u参数为用户，-p参数为密码

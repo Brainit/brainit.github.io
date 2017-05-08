@@ -8,11 +8,11 @@ tags: Emulate MySQL
 
 ### 目录
 
-1. [update核心](#step1)
-2. [update命令](#step2)
+1. [update核心](#item1)
+2. [update命令](#item2)
 
 ---
-#### <span id="step1">update核心</span>
+#### <span id="item1">update核心</span>
 > update是MySQL中进行记录更新操作的命令
 > 
 > 核心1： 需要更新的表名
@@ -23,5 +23,5 @@ tags: Emulate MySQL
 > 
 > 核心4： 更改哪些列
 
-#### <span id="step2">update命令</span>
+#### <span id="item2">update命令</span>
 > update 表名 set 字段1=值1,字段2=值2 where 条件;

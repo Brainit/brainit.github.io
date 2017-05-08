@@ -8,14 +8,14 @@ tags: Emulate Java
 
 ### 目录
 
-1. [集合的结构图](#step1)
-2. [集合顶级接口](#step2)
-3. [Collection](#step3)
-4. [Map](#step4)
-5. [集合的存取](#step5)
+1. [集合的结构图](#item1)
+2. [集合顶级接口](#item2)
+3. [Collection](#item3)
+4. [Map](#item4)
+5. [集合的存取](#item5)
 
 ---
-#### <span id="step1">集合结构图</span>
+#### <span id="item1">集合结构图</span>
 > 集合结构图
 ```
 ├── Collection
@@ -32,10 +32,10 @@ tags: Emulate Java
     └── TreeMap
 ```
 
-#### <span id="step2">集合顶级接口</span>
+#### <span id="item2">集合顶级接口</span>
 > 集合的两个顶级接口分别为：**Collection** 和 **Map**<br />
 
-#### <span id="step3">Collection</span>
+#### <span id="item3">Collection</span>
 > Collection下有两个比较常用的接口分别是List（列表）和Set（集），其中List可以存储重复元素，元素是有序的（存取顺序一致），可以通过List脚标来获取指定元素；而Set不可以有重复元素，元素是无序的。<br />
 > 
 > **List接口**：比较常用的类有三个，ArrayList，Vactor，LinkedList
@@ -52,14 +52,14 @@ tags: Emulate Java
 >>
 > 
 
-#### <span id="step4">Map</span>
+#### <span id="item4">Map</span>
 > Map接口：元素是成对出现的，以键和值的形式体现出来，键要保证唯一性：常见类有，HashMap，HashTable，TreeMap。
 >> **HashMap**：线程不安全，允许存放null键和null值。<br />
 >> **HashTable**：线程安全的，不允许存放null键和null值。<br />
 >> **TreeMap**：可以对键进行排序（要实现排序方法，排序方法同TreeSet）<br />
 > 
 
-#### <span id="step5">集合的存取</span>
+#### <span id="item5">集合的存取</span>
 > **存入集合**
 > 
 |集合类|存入方式|

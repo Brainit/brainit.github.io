@@ -8,16 +8,16 @@ tags: Emulate MySQL
 
 ### 目录
 
-1. [group by使用](#step1)
-2. [组合使用](#step2)
-3. [group by的条件](#step3)
+1. [group by使用](#item1)
+2. [组合使用](#item2)
+3. [group by的条件](#item3)
 
 ---
-#### <span id="step1">group by使用</span>
+#### <span id="item1">group by使用</span>
 > 使用group by对数据进行分组
 >> select 字段名1 from tablename group by 字段名2
 
-#### <span id="step2">组合使用</span>
+#### <span id="item2">组合使用</span>
 > 实际中常常将分组group by和排序，统计函数组合使用
 >> select 字段名1 from tablename group by 字段名2 order by 字段名3 [desc/asc]
 >> 
@@ -25,7 +25,7 @@ tags: Emulate MySQL
 >>
 >> 以及排序和统计函数的组合使用
 
-### <span id="step3">group by的条件</span>
+### <span id="item3">group by的条件</span>
 > 如果在分组查询中加入条件，则必须使用having，而不是where
 >> select 字段名1 from tablename group by 字段名2 having 条件
 > 

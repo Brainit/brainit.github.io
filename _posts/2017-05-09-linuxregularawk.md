@@ -8,20 +8,20 @@ tags: Emulate Linux
 
 ### 目录
 
-1. [awk用法](#step1)
-2. [awk执行过程](#step2)
-3. [awk特殊变量说明](#step3)
-4. [awk逻辑运算符](#step4)
-5. [awk示例](#step5)
+1. [awk用法](#item1)
+2. [awk执行过程](#item2)
+3. [awk特殊变量说明](#item3)
+4. [awk逻辑运算符](#item4)
+5. [awk示例](#item5)
 
 ---
-#### <span id="step1">awk用法</span>
+#### <span id="item1">awk用法</span>
 awk是一个非常棒的数据处理工具，相比于sed常常作用于一整行的处理，awk则比较倾向于将一行分成数个字段来处理。
 ```script
 awk '条件类型1{动作1}条件类型2{动作2}...' filename
 ```
 awk主要是处理每一行的字段内的数据，而默认的字段的分隔符为空格键或[TAB]键
-#### <span id="step2">awk执行过程</span>
+#### <span id="item2">awk执行过程</span>
 ```script
 $0代表当前行
 $1-$n代表每一个字段的变量名称
@@ -31,14 +31,14 @@ $1-$n代表每一个字段的变量名称
 * 做完所有的动作与条件类型
 * 若还有后面的行的数据，重复上面的三步，直到所有数据都读完为止
 
-#### <span id="step3">awk特殊变量说明</span>
+#### <span id="item3">awk特殊变量说明</span>
 ```script
 NF	:每一行拥有的字段总数
 NR	:目前akw所处理的是“第几行”的数据
 FS	:目前的分隔符，默认是空格键
 ```
 
-#### <span id="step4">awk逻辑运算符</span>
+#### <span id="item4">awk逻辑运算符</span>
 ```script
 >	:大于
 <	:小于
@@ -48,7 +48,7 @@ FS	:目前的分隔符，默认是空格键
 !=	:不等于
 ```
 
-#### <span id="step5">awk示例</span>
+#### <span id="item5">awk示例</span>
 使用awk命令显示本机账户与登陆者IP
 ```script
 last -n 5 | awk '{printf $1 "\t" $3}'

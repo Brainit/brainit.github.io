@@ -8,12 +8,12 @@ tags: Emulate Java
 
 ### 目录
 
-1. [Socket类](#step1)
-2. [ServerSocket类](#step2)
-3. [ServerSocket类服务多个客户端](#step3)
+1. [Socket类](#item1)
+2. [ServerSocket类](#item2)
+3. [ServerSocket类服务多个客户端](#item3)
 
 ---
-#### <span id="step1">Socket类</span>
+#### <span id="item1">Socket类</span>
 > 客户端Socket
 
 ```
@@ -45,7 +45,7 @@ public class SocketTest{
 > boolean isConnected()<br />
 > boolean isClose()<br />
 
-#### <span id="step2">ServerSocket类</span>
+#### <span id="item2">ServerSocket类</span>
 > 服务端ServerSocket
 
 ```
@@ -78,7 +78,7 @@ public class EchoServer{
 
 >　
 
-#### <span id="step3">ServerSocket类服务多个客户端</span>
+#### <span id="item3">ServerSocket类服务多个客户端</span>
 > 通过为每个请求新建一个线程服务多个客户端
 
 ```

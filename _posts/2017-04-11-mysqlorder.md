@@ -8,11 +8,11 @@ tags: Emulate MySQL
 
 ### 目录
 
-1. [order by简单应用](#step1)
-2. [多字段综合排序](#step2)
+1. [order by简单应用](#item1)
+2. [多字段综合排序](#item2)
 
 ---
-#### <span id="step1">order by简单应用</span>
+#### <span id="item1">order by简单应用</span>
 > 使用order by对字段进行排序操作
 >> 默认为升序
 >> select 字段名1 from tablename order by 字段名2
@@ -22,7 +22,7 @@ tags: Emulate MySQL
 >> select 字段名1 from tablename order by 字段名2 DESC
 
 
-#### <span id="step2">多字段综合排序</span>
+#### <span id="item2">多字段综合排序</span>
 > 很多时候需要同时考虑多个字段进行排序，如果字段1相同就按照字段2进行排序，这时候就需要使用多字段综合排序
 >> select 字段名1 from tablename order by 字段名2，字段名3
 >>

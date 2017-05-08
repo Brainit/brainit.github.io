@@ -8,11 +8,11 @@ tags: Emulate Linux
 
 ### 目录
 
-1. [变量及内容查看](#step1)
-2. [常见环境变量说明](#step2)
+1. [变量及内容查看](#item1)
+2. [常见环境变量说明](#item2)
 
 ---
-#### <span id="step1">变量内容查看</span>
+#### <span id="item1">变量内容查看</span>
 > 通过env命令查看系统环境变量
 
 ```
@@ -31,7 +31,7 @@ XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/brainit
 brainit@brainit-HP-Mini:~$ set
 ```
 
-#### <span id="step2">常见环境变量说明</span>
+#### <span id="item2">常见环境变量说明</span>
 
 |环境变量|说明|
 |:------------|:----------|

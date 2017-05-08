@@ -8,16 +8,16 @@ tags: Emulate Java Linux
 
 ### 目录
 
-1. [建立项目目录](#step1)
-2. [编写Servlet](#step2)
-3. [编译HelloServlet.java](#step3)
-4. [建立web.xml](#step4)
-5. [启动tomcat服务器](#step5)
-6. [访问](#step6)
+1. [建立项目目录](#item1)
+2. [编写Servlet](#item2)
+3. [编译HelloServlet.java](#item3)
+4. [建立web.xml](#item4)
+5. [启动tomcat服务器](#item5)
+6. [访问](#item6)
 
 
 ---
-#### <span id="step1">建立项目目录</span>
+#### <span id="item1">建立项目目录</span>
 > 在tomcat下的webapps目录下建立项目的目录，也可以在webapps下的ROOT目录中操作，我选择直接在ROOT中操作。<br />
 > 并建立如下的目录结构
 ```text
@@ -28,7 +28,7 @@ tags: Emulate Java Linux
 ```
 > 在linux下，你可能需要使用root权限才能建立文件与目录
 
-#### <span id="step2">编写Servlet</span>
+#### <span id="item2">编写Servlet</span>
 > 编辑HelloServlet.java
 > 
 
@@ -48,7 +48,7 @@ public class HelloServlet extends HttpServlet
 ```
 > 
 
-#### <span id="step3">编译HelloServlet.java</span>
+#### <span id="item3">编译HelloServlet.java</span>
 > 编译java文件需要导入servlet-api.jar文件,你可以使用如下命令查找servlet-api.jar
 ```
 whereis servlet-api.jar
@@ -69,7 +69,7 @@ javac -d . -cp /usr/share/tomcat8/lib/servlet-api.jar HelloServlet.java
 ```
 > 
 
-#### <span id="step4">修改web.xml</span>
+#### <span id="item4">修改web.xml</span>
 > 修改WEB-INF目录下的web.xml文件
 
 ```
@@ -91,7 +91,7 @@ javac -d . -cp /usr/share/tomcat8/lib/servlet-api.jar HelloServlet.java
 ```
 > 
 
-#### <span id="step5">启动tomcat服务器</span>
+#### <span id="item5">启动tomcat服务器</span>
 > 启动tomcat服务器
 ```
 sudo service tomcat8 start
@@ -103,7 +103,7 @@ sudo service tomcat8 restart
 ```
 > 
 
-#### <span id="step6">访问</span>
+#### <span id="item6">访问</span>
 > 打开浏览器，通过访问服务器<br />
 ```
 http://localhost:8080/helloservlet.do

@@ -7,12 +7,12 @@ tags: Emulate Linux
 ---
 
 ### 目录
-1. [目录与路径](#step1)
-2. [文件与目录管理](#step2)
-3. [文件内容查阅](#step3)
+1. [目录与路径](#item1)
+2. [文件与目录管理](#item2)
+3. [文件内容查阅](#item3)
 
 ---
-#### <span id="step1">目录与路径</span>
+#### <span id="item1">目录与路径</span>
 
 > ##### 相对路径与绝对路径
 >>* 相对路径：相对于根目录/的路径 /home/brainit/Notes/
@@ -38,7 +38,7 @@ tags: Emulate Linux
 > 
 > * mkdir: make directory
 > 
-#### <span id="step2">文件与目录管理</span>
+#### <span id="item2">文件与目录管理</span>
 > 
 > * ls: 查看文件与目录
 >>**-a: 列出全部的文件，隐藏文件一起列出来**
@@ -113,7 +113,7 @@ tags: Emulate Linux
 > * dirname：获取目录名
 > 
 > 
-#### <span id="step3">文件内容查阅</span>
+#### <span id="item3">文件内容查阅</span>
 
 > * cat：concatenate
 >>-A：相当于-vET
