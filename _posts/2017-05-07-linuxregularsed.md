@@ -19,6 +19,7 @@ tags: Emulate Linux
 
 ---
 #### <span id="step1">sed用法</span>
+sed本身是一个管道命令，可以分析标准输入，而且还可以将数据进行替换，删除，新增，选取特定行等功能。
 ```bash
 sed [-nefr] [动作]
 
