@@ -19,7 +19,7 @@ tags: Software Windows
 > * 适用场景：需要在某个窗口操作，而需要用到另一个窗口的内容
 
 #### <span id="item2">获取windows top</span>
-> * 下载链接: [top.exe](https://github.com/Brainit/brainit.github.io/tree/master/assets/top.exe) 
+> * 下载链接: [top.exe](/download/top.exe) 
 > * （提示Not Found请联系[brainit](mailto:brainit@163.com)）
 
 #### <span id="item3">使用</span>
