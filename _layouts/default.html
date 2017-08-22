@@ -75,29 +75,31 @@
     <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
   </head>
   <body class="home page page-id-194 page-template page-template-page-homepage page-template-page-homepage-php custom-background" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
-  <div class="jumbotron">
-    <div id="container">
-      <div id="main" role="main">
-	  <canvas id="canvas" width="1144" height="1006"></canvas>
-        <header>
-        <h1>{{ page.title }}</h1>
-        </header>
-        <nav>
-        <span><a title="网站首页" class="" href="/">首页</a></span>
-        <span><a title="文章分类" class="" href="/categories/">分类</a></span>
-        <span><a title="标签索引" class="" href="/tags/">标签</a></span>
-        <span><a title="友情链接" class="" href="/links/">链接</a></span>
-        <span><a title="SS免费账号密码" class="" href="/ss/">SS</a></span>
-        <span><a title="留言交流" class="" href="/guestbook/">留言</a></span>
-        <span><a title="关于站长" class="" href="/about/">关于</a></span>
-        <!-- <span><a title="种子订阅" class="" href="/feed/" target="_blank">订阅</a></span> -->
-        </nav>
-        <article class="content">
-        {{ content }}
-        </article>
-      </div>
-
-    <footer>
+	<canvas id="canvas" width="1144" height="1006"></canvas>
+	<header>
+	<h1>{{ page.title }}</h1>
+	</header>
+	
+	<div class="jumbotron">
+		<div id="container">
+		  <div id="main" role="main">
+			<nav>
+				<span><a title="网站首页" class="" href="/">首页</a></span>
+				<span><a title="文章分类" class="" href="/categories/">分类</a></span>
+				<span><a title="标签索引" class="" href="/tags/">标签</a></span>
+				<span><a title="友情链接" class="" href="/links/">链接</a></span>
+				<span><a title="SS免费账号密码" class="" href="/ss/">SS</a></span>
+				<span><a title="留言交流" class="" href="/guestbook/">留言</a></span>
+				<span><a title="关于站长" class="" href="/about/">关于</a></span>
+				<!-- <span><a title="种子订阅" class="" href="/feed/" target="_blank">订阅</a></span> -->
+			</nav>
+			<article class="content">
+			{{ content }}
+			</article>
+		  </div>
+		</div>
+    </div>
+	<footer>
         <p><small>
             <a href="http://github.com/{{ site.github }}/NET/new/gh-pages/_posts" target="_blank" title="撰写文章">Po</a>wer<a href="http://github.com/{{ site.github }}/NET/edit/gh-pages/{{ page.path }}" target="_blank" title="编辑页面">ed</a> by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> @ <a href="http://github.com/{{ site.github }}/NET" target="_blank" title="项目主页">GitHub</a>
              | <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/cn/" target="_blank" title="许可协议">©</a> 2004 - {{site.time | date:"%Y"}} <a href="/about/">{{ site.author }}</a>
@@ -109,9 +111,6 @@
 {% endif %}
          </small></p>
     </footer>
-	</div>
-    </div>
-	
 	<script src="./src/hovertreewelcome.js.下载"></script>
 	<script type="text/javascript">
 	
