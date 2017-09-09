@@ -1,9 +1,18 @@
-<!--高速版-->
-<div id="SOHUCS" ></div>
-<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-window.changyan.api.config({
-appid: 'cytaMjSxq',
-conf: 'prod_377d859000a59fc7c68e69c165af3481'
-});
-</script>
+{% if site.duoshuo %}
+	{% if page.thread %}
+	<div class="ds-thread" data-thread-key="{{ page.thread }}" data-url="{{ site.url }}{{ page.url }}" data-title="{{ page.title }}" />
+	{% else %}
+	<div class="ds-thread" />
+	{% endif %}	
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"{{ site.duoshuo }}"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+{% endif %}

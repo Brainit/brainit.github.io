@@ -3,7 +3,6 @@ title: 首页
 layout: page
 ---
 
-
 <ul class="listing">
 {% for post in paginator.posts %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
@@ -54,10 +53,4 @@ layout: page
   {% endif %}
   (共{{ paginator.total_posts }}篇)
 </div>
-
-<!-- 百度站内搜索 -->
-<div height=30px>
-<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=16882383334573167256' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
-</div>
-<!-- 百度站内搜索结束 -->
 
