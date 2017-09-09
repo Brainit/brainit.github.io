@@ -1,48 +1,594 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="{{ site.author }}" />
-    <title>{% if page.path == 'index.html' %}{{ site.name }}{% else %}{% unless page.id %}{{ site.name }} - {% endunless %}{{ page.title }}{% endif %}</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link href="/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
-    <link rel="stylesheet" href="/media/css/style.css" />
-    <link rel="stylesheet" href="/media/css/highlight.css" />
-    <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
-  </head>
-  <body>
-    <div id="container">
-      <div id="main" role="main">
-        <header>
-        <h1>{{ page.title }}</h1>
-        </header>
-        <nav>
-        <span><a title="网站首页" class="" href="/">首页</a></span>
-        <span><a title="文章分类" class="" href="/categories/">分类</a></span>
-        <span><a title="标签索引" class="" href="/tags/">标签</a></span>
-        <!--<span><a title="友情链接" class="" href="/links/">链接</a></span>-->
-        <span><a title="留言交流" class="" href="/guestbook/">留言</a></span>
-        <span><a title="关于站长" class="" href="/about/">关于</a></span>
-        <span><a title="种子订阅" class="" href="/feed/" target="_blank">订阅</a></span>
-        </nav>
-        <article class="content">
-        {{ content }}
+
+<!-- saved from url=(0022)http://www.662820.com/ -->
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body class="home page page-id-194 page-template page-template-page-homepage page-template-page-homepage-php custom-background" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">﻿
+
+
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主页</title>
+  <link rel="shortcut icon" href="http://www.662820.com/favicon.ico">
+  <link rel="stylesheet" href="./index_files/buttons.css">
+  <link rel="stylesheet" id="patternfly-adjusted-css" href="./index_files/app.css" type="text/css" media="all">
+  <link href="./index_files/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript">
+    function duihua()
+	{
+	alert("公告：有事联系QQ599251919")
+	}
+    </script>
+  <script type="text/javascript" src="./index_files/jquery.js.下载"></script>
+
+  <script type="text/javascript" src="./index_files/bootstrap.min.js.下载"></script>
+  <style>
+    #main article { border-bottom: none; }
+	body{
+		    font: 500 .875em PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+        background-color: #07040e;
+	}
+  #canvas {
+                position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: none;
+        }
+        .content{
+      position: absolute;
+    z-index: 11;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.splash{
+  position: relative;
+  }
+  img#qq {
+    width: 128px;
+    background-size: cover;
+    border-radius: 200px;
+    box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+    border: 3px solid #00a0ff;
+    opacity: 1;
+    margin: 0 auto;
+	margin-bottom: 20px;
+	transition: all 1.0s;  
+}
+#qq:hover {
+    box-shadow: 0 0 10px #fff;
+    -webkit-box-shadow: 0 0 19px #fff;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg); 	/* IE 9 */
+    -moz-transform:rotate(360deg); 	/* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg); 	/* Opera */
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+  </style>
+
+  
+
+  <header role="banner">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+          </button>
+          <a class="navbar-brand" id="logo" title="HY-PHP" href="http://www.662820.com/" target="_blank">
+           乐乐视频解析          </a>
+        </div>
+        <!-- end .navbar-header -->
+        <div class="navbar-collapse collapse">
+          <ul id="menu-primary" class="nav navbar-nav navbar-right">
+         
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown">
+              <a href="/" class="dropdown-toggle">
+                首页
+             </a>
+            </li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown">
+              <a href="/categories/" class="dropdown-toggle">
+                分类
+			</a>
+            </li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown">
+              <a href="/tags/" class="dropdown-toggle">
+               标签
+			</a>
+            </li>
+
+	        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown">
+              <a href="/guestbook/" class="dropdown-toggle" target="_blank">
+                留言	
+             </a>
+            </li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown">
+              <a href="/about/" class="dropdown-toggle" target="_blank">
+                关于
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- end .navbar-collapse -->
+      </div>
+      <!-- end .container -->
+    </nav>
+    <!-- end .navbar -->
+  </header>
+  <!-- end header -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="splash">
+        <div class="content">
+		<article class="content">
+			{{ content }}
         </article>
       </div>
-
-    <footer>
-        <p><small>
-            <a href="http://github.com/{{ site.github }}/NET/new/gh-pages/_posts" target="_blank" title="撰写文章">Po</a>wer<a href="http://github.com/{{ site.github }}/NET/edit/gh-pages/{{ page.path }}" target="_blank" title="编辑页面">ed</a> by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> @ <a href="http://github.com/{{ site.github }}/NET" target="_blank" title="项目主页">GitHub</a>
-             | <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/cn/" target="_blank" title="许可协议">©</a> 2004 - {{site.time | date:"%Y"}} <a href="/about/">{{ site.author }}</a>
-{% if site.beian %}
-             | <a href="http://www.miibeian.gov.cn" target="_blank">{{ site.beian }}</a>
-{% endif %}
-{% if site.cnzz %}
-             | <script src="http://s85.cnzz.com/stat.php?id={{ site.cnzz }}"></script>
-{% endif %}
-         </small></p>
-    </footer>
-
     </div>
-  </body>
-</html>
+  <canvas id="canvas" width="1366" height="671"></canvas>
+  <!-- <div id="particles-js"></div> -->
+  </div>
+<script src="./index_files/hovertreewelcome.js.下载"></script>
+<script type="text/javascript">
+
+// particlesJS('particles-js',
+//   {
+//     "particles": {
+//       "number": {
+//         "value": 110,
+//         "density": {
+//           "enable": true,
+//           "value_area": 800
+//         }
+//       },
+//       "color": {
+//         "value": "#ffffff"
+//       },
+//       "shape": {
+//         "type": "circle",
+//         "stroke": {
+//           "width": 0,
+//           "color": "#000000"
+//         },
+//         "polygon": {
+//           "nb_sides": 5
+//         },
+//         "image": {
+//           "src": "img/github.svg",
+//           "width": 100,
+//           "height": 100
+//         }
+//       },
+//       "opacity": {
+//         "value": 0.5,
+//         "random": false,
+//         "anim": {
+//           "enable": false,
+//           "speed": 1,
+//           "opacity_min": 0.1,
+//           "sync": false
+//         }
+//       },
+//       "size": {
+//         "value": 1,
+//         "random": true,
+//         "anim": {
+//           "enable": false,
+//           "speed": 20,
+//           "size_min": 0.1,
+//           "sync": false
+//         }
+//       },
+//       "line_linked": {
+//         "enable": true,
+//         "distance": 40,
+//         "color": "#fff",
+//         "opacity": 1,
+//         "width": 1
+//       },
+//       "move": {
+//         "enable": true,
+//         "speed": 3,
+//         "direction": "none",
+//         "random": false,
+//         "straight": false,
+//         "out_mode": "out",
+//         "attract": {
+//           "enable": false,
+//           "rotateX": 600,
+//           "rotateY": 1200
+//         }
+//       }
+//     },
+//     "interactivity": {
+//       "detect_on": "canvas",
+//       "events": {
+//         "onhover": {
+//           "enable": true,
+//           "mode": "grab"
+//         },
+//         "onclick": {
+//           "enable": true,
+//           "mode": "push"
+//         },
+//         "resize": true
+//       },
+//       "modes": {
+//         "grab": {
+//           "distance": 120,
+//           "line_linked": {
+//             "opacity": 1
+//           }
+//         },
+//         "bubble": {
+//           "distance": 400,
+//           "size": 40,
+//           "duration": 2,
+//           "opacity": 8,
+//           "speed": 3
+//         },
+//         "repulse": {
+//           "distance": 300
+//         },
+//         "push": {
+//           "particles_nb": 4
+//         },
+//         "remove": {
+//           "particles_nb": 2
+//         }
+//       }
+//     },
+//     "retina_detect": true,
+//     "config_demo": {
+//       "hide_card": false,
+//       "background_color": "#b61924",
+//       "background_image": "",
+//       "background_position": "50% 50%",
+//       "background_repeat": "no-repeat",
+//       "background_size": "cover"
+//     }
+//   }
+
+// );
+
+
+        ; (function (window) {
+
+            var ctx,
+                hue,
+                logo,
+                form,
+                buffer,
+                target = {},
+                tendrils = [],
+                settings = {};
+
+            settings.debug = true;
+            settings.friction = 0.5;
+            settings.trails = 20;
+            settings.size = 50;
+            settings.dampening = 0.25;
+            settings.tension = 0.98;
+
+            Math.TWO_PI = Math.PI * 2;
+
+            // ========================================================================================
+            // Oscillator 何问起
+            // ----------------------------------------------------------------------------------------
+
+            function Oscillator(options) {
+                this.init(options || {});
+            }
+
+            Oscillator.prototype = (function () {
+
+                var value = 0;
+
+                return {
+
+                    init: function (options) {
+                        this.phase = options.phase || 0;
+                        this.offset = options.offset || 0;
+                        this.frequency = options.frequency || 0.001;
+                        this.amplitude = options.amplitude || 1;
+                    },
+
+                    update: function () {
+                        this.phase += this.frequency;
+                        value = this.offset + Math.sin(this.phase) * this.amplitude;
+                        return value;
+                    },
+
+                    value: function () {
+                        return value;
+                    }
+                };
+
+            })();
+
+            // ========================================================================================
+            // Tendril hovertree.com
+            // ----------------------------------------------------------------------------------------
+
+            function Tendril(options) {
+                this.init(options || {});
+            }
+
+            Tendril.prototype = (function () {
+
+                function Node() {
+                    this.x = 0;
+                    this.y = 0;
+                    this.vy = 0;
+                    this.vx = 0;
+                }
+
+                return {
+
+                    init: function (options) {
+
+                        this.spring = options.spring + (Math.random() * 0.1) - 0.05;
+                        this.friction = settings.friction + (Math.random() * 0.01) - 0.005;
+                        this.nodes = [];
+
+                        for (var i = 0, node; i < settings.size; i++) {
+
+                            node = new Node();
+                            node.x = target.x;
+                            node.y = target.y;
+
+                            this.nodes.push(node);
+                        }
+                    },
+
+                    update: function () {
+
+                        var spring = this.spring,
+                            node = this.nodes[0];
+
+                        node.vx += (target.x - node.x) * spring;
+                        node.vy += (target.y - node.y) * spring;
+
+                        for (var prev, i = 0, n = this.nodes.length; i < n; i++) {
+
+                            node = this.nodes[i];
+
+                            if (i > 0) {
+
+                                prev = this.nodes[i - 1];
+
+                                node.vx += (prev.x - node.x) * spring;
+                                node.vy += (prev.y - node.y) * spring;
+                                node.vx += prev.vx * settings.dampening;
+                                node.vy += prev.vy * settings.dampening;
+                            }
+
+                            node.vx *= this.friction;
+                            node.vy *= this.friction;
+                            node.x += node.vx;
+                            node.y += node.vy;
+
+                            spring *= settings.tension;
+                        }
+                    },
+
+                    draw: function () {
+
+                        var x = this.nodes[0].x,
+                            y = this.nodes[0].y,
+                            a, b;
+
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+
+                        for (var i = 1, n = this.nodes.length - 2; i < n; i++) {
+
+                            a = this.nodes[i];
+                            b = this.nodes[i + 1];
+                            x = (a.x + b.x) * 0.5;
+                            y = (a.y + b.y) * 0.5;
+
+                            ctx.quadraticCurveTo(a.x, a.y, x, y);
+                        }
+
+                        a = this.nodes[i];
+                        b = this.nodes[i + 1];
+
+                        ctx.quadraticCurveTo(a.x, a.y, b.x, b.y);
+                        ctx.stroke();
+                        ctx.closePath();
+                    }
+                };
+
+            })();
+
+            // ----------------------------------------------------------------------------------------
+
+            function init(event) {
+
+                document.removeEventListener('mousemove', init);
+                document.removeEventListener('touchstart', init);
+
+                document.addEventListener('mousemove', mousemove);
+                document.addEventListener('touchmove', mousemove);
+                document.addEventListener('touchstart', touchstart);
+
+                mousemove(event);
+                reset();
+                loop();
+            }
+
+            function reset() {
+
+                tendrils = [];
+
+                for (var i = 0; i < settings.trails; i++) {
+
+                    tendrils.push(new Tendril({
+                        spring: 0.45 + 0.025 * (i / settings.trails)
+                    }));
+                }
+            }
+            function loop() {
+                if (!ctx.running) return;
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.fillStyle = 'rgba(8,5,16,0.4)';
+                ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+                ctx.globalCompositeOperation = 'lighter';
+                ctx.strokeStyle = 'hsla(' + Math.round(hue.update()) + ',90%,50%,0.25)';
+                ctx.lineWidth = 1;
+
+                if (ctx.frame % 60 == 0) {
+                    console.log(hue.update(), Math.round(hue.update()), hue.phase, hue.offset, hue.frequency, hue.amplitude);
+                }
+
+                for (var i = 0, tendril; i < settings.trails; i++) {
+                    tendril = tendrils[i];
+                    tendril.update();
+                    tendril.draw();
+                }
+
+                ctx.frame++;
+                ctx.stats.update();
+                requestAnimFrame(loop);
+            }
+
+            function resize() {
+                ctx.canvas.width = window.innerWidth;
+                ctx.canvas.height = window.innerHeight;
+            }
+
+            function start() {
+                if (!ctx.running) {
+                    ctx.running = true;
+                    loop();
+                }
+            }
+
+            function stop() {
+                ctx.running = false;
+            }
+
+            function mousemove(event) {
+                if (event.touches) {
+                    target.x = event.touches[0].pageX;
+                    target.y = event.touches[0].pageY;
+                } else {
+                    target.x = event.clientX
+                    target.y = event.clientY;
+                }
+                event.preventDefault();
+            }
+
+            function touchstart(event) {
+                if (event.touches.length == 1) {
+                    target.x = event.touches[0].pageX;
+                    target.y = event.touches[0].pageY;
+                }
+            }
+
+            function keyup(event) {
+                switch (event.keyCode) {
+                    case 32:
+                        save();
+                        break;
+                    default:
+                        // console.log(event.keyCode); hovertree.com
+                }
+            }
+            function letters(id) {
+                var el = document.getElementById(id),
+                    letters = el.innerHTML.replace('&amp;', '&').split(''),
+                    heading = '';
+
+                for (var i = 0, n = letters.length, letter; i < n; i++) {
+                    letter = letters[i].replace('&', '&amp');
+                    heading += letter.trim() ? '<span class="letter-' + i + '">' + letter + '</span>' : '&nbsp;';
+                }
+                el.innerHTML = heading;
+                setTimeout(function () {
+                    el.className = 'transition-in';
+                }, (Math.random() * 500) + 500);
+            }
+            function save() {
+                if (!buffer) {
+                    buffer = document.createElement('canvas');
+                    buffer.width = screen.availWidth;
+                    buffer.height = screen.availHeight;
+                    buffer.ctx = buffer.getContext('2d');
+                    form = document.createElement('form');
+                    form.method = 'post';
+                    form.input = document.createElement('input');
+                    form.input.type = 'hidden';
+                    form.input.name = 'data';
+                    form.appendChild(form.input);
+                    document.body.appendChild(form);
+                }
+                buffer.ctx.fillStyle = 'rgba(8,5,16)';
+                buffer.ctx.fillRect(0, 0, buffer.width, buffer.height);
+
+                buffer.ctx.drawImage(canvas,
+                    Math.round(buffer.width / 2 - canvas.width / 2),
+                    Math.round(buffer.height / 2 - canvas.height / 2)
+                );
+
+                buffer.ctx.drawImage(logo,
+                    Math.round(buffer.width / 2 - logo.width / 4),
+                    Math.round(buffer.height / 2 - logo.height / 4),
+                    logo.width / 2,
+                    logo.height / 2
+                );
+                window.open(buffer.toDataURL(), 'wallpaper', 'top=0,left=0,width=' + buffer.width + ',height=' + buffer.height);
+                // form.input.value = buffer.toDataURL().substr(22);
+                // form.submit(); hovertree.com
+            }
+            window.requestAnimFrame = (function () {
+                return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (fn) { window.setTimeout(fn, 1000 / 60) };
+            })();
+            window.onload = function () {
+                ctx = document.getElementById('canvas').getContext('2d');
+                ctx.stats = new Stats();
+                ctx.running = true;
+                ctx.frame = 1;
+                hue = new Oscillator({
+                    phase: Math.random() * Math.TWO_PI,
+                    amplitude: 85,
+                    frequency: 0.0015,
+                    offset: 285
+                });
+                document.addEventListener('mousemove', init);
+                document.addEventListener('touchstart', init);
+                document.body.addEventListener('orientationchange', resize);
+                window.addEventListener('resize', resize);
+                window.addEventListener('keyup', keyup);
+                window.addEventListener('focus', start);
+                window.addEventListener('blur', stop);
+                resize();
+                if (window.DEBUG) {
+                    var gui = new dat.GUI();
+                    // gui.add(settings, 'debug');
+                    settings.gui.add(settings, 'trails', 1, 30).onChange(reset);
+                    settings.gui.add(settings, 'size', 25, 75).onFinishChange(reset);
+                    settings.gui.add(settings, 'friction', 0.45, 0.55).onFinishChange(reset);
+                    settings.gui.add(settings, 'dampening', 0.01, 0.4).onFinishChange(reset);
+                    settings.gui.add(settings, 'tension', 0.95, 0.999).onFinishChange(reset);
+                    document.body.appendChild(ctx.stats.domElement);
+                }
+            };
+        })(window);
+    </script>
+<div style="display:none">
+<script src="./index_files/z_stat.php" language="JavaScript"></script><script src="./index_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1263216059" target="_blank" title="站长统计">站长统计</a>
+</div>
+
+</div><div style="position: static; display: none; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-arrow-top.png&quot;);"></div></div></body></html>
